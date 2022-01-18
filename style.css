@@ -1,0 +1,84 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:darkblue;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  min-height: 100vh;
+}
+
+header{
+  font-size: 2rem;
+}
+
+header,form{
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+form input form button{
+  padding: 0.5 rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+  
+}
+
+form button{
+  color:crimson;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+}
+
+.todoContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoList{
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo{
+  margin: 0.5rem;
+  background: darkblue;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.todo li{
+  flex: 1;
+}
+
+.trashButton, .completedButton{
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.completedButton{
+  background-color:darkgreen;
+}
+
+.completed{
+  text-decoration: line-through;
+}
+
